@@ -43,41 +43,58 @@ void TicTacToe::playerMoves(int player)
 
 	do {
 		cin >> location;
+
+		if (isTaken[location - 1] == true)
+		{
+			cout << "Invalid selection" << endl;
+			isValidNumber = false;
+			continue;
+		}
+
 		switch (location)
 		{
 		case 1:
+			isTaken[0] = true;
 			board[0][0] = tokenChar;
 			isValidNumber = true;
 			break;
 		case 2:
+			isTaken[1] = true;
 			board[0][1] = tokenChar;
 			isValidNumber = true;
 			break;
 		case 3:
+			isTaken[2] = true;
 			board[0][2] = tokenChar;
 			isValidNumber = true;
 			break;
 		case 4:
+			isTaken[3] = true;
 			board[1][0] = tokenChar;
 			isValidNumber = true;
 			break;
 		case 5:
+			isTaken[4] = true;
 			board[1][1] = tokenChar;
 			isValidNumber = true;
 			break;
 		case 6:
+			isTaken[5] = true;
 			board[1][2] = tokenChar;
 			isValidNumber = true;
 			break;
 		case 7:
+			isTaken[6] = true;
 			board[2][0] = tokenChar;
 			isValidNumber = true;
 			break;
 		case 8:
+			isTaken[7] = true;
 			board[2][1] = tokenChar;
 			isValidNumber = true;
 			break;
 		case 9:
+			isTaken[8] = true;
 			board[2][2] = tokenChar;
 			isValidNumber = true;
 			break;

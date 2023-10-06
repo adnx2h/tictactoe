@@ -15,7 +15,7 @@ int main()
 		cout << "Player 1, select a number: ";
 		game.playerMoves(1);
 		game.drawBoard(game.board);
-		game. checkMove(1);
+		game.checkMove(1);
 		cout << "Player 2, select a number: ";
 		game.playerMoves(2);
 		game.drawBoard(game.board);
