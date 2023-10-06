@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/tictactoe
+/x64/Debug
+/tictactoe.sln
+/tictactoe.vcxproj
+/tictactoe.vcxproj.filters
+/tictactoe.vcxproj.user
